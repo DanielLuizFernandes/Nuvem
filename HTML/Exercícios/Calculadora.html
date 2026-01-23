@@ -5,69 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <style>
-        main {
-            background-color: rgb(41, 41, 41);
+        body {
+            background: #1e1e1eb0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Segoe UI, sans-serif;
+        }
+
+        .calculadora {
+            background: #1e1e1e;
+            padding: 15px;
             border-radius: 10px;
+            width: 260px;
         }
-        
-        nav {
-            font-size: 2em;
+
+        .display {
+            background: #1e1e1e;
             color: white;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            font-size: 32px;
+            text-align: right;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow-x: auto;
         }
 
-        p.o {
-            display: inline-block;
-            height: 60px;
-            width: 60px;
-            background-color: rgb(51, 51, 51);
-            text-align: center;
-            border-radius: 5px;
+        .botoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
         }
 
-        p.igual {
-            display: inline-block;
-            height: 60px;
-            width: 60px;
-            background-color: rgb(6, 162, 209);
-            text-align: center;
-            border-radius: 5px;
+        button {
+            height: 45px;
+            font-size: 16px;
+            background: #3A3B3C;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+                    background: #313333;
+        }
+
+        button.operador:hover {
+            background: #3A3B3C;
+        }
+
+        button.igual:hover {
+            background-color: #47B1E8;
+        }
+
+        .operador {
+            background: #313333;
+        }
+
+        .igual {
+            background: #4CC2FF;
             color: black;
-        }
-
-        p.n {
-            display: inline-block;
-            height: 60px;
-            width: 60px;
-            background-color: rgb(66, 66, 66);
-            text-align: center;
-            border-radius: 5px;
         }
 
     </style>
 </head>
 <body>
-    <main>
-        <nav>
-            <p class="o">%</p> <p class="o">CE</p> <p class="o">C</p> <p class="o">⌫</p>
-        </nav>
-        <nav>
-            <p class="o">¹/x</p> <p class="o">x²</p> <p class="o">√x</p> <p class="o">÷</p>
-        </nav>
-        <nav>
-            <p class="n">7</p> <p class="n">8</p> <p class="n">9</p> <p class="o">x</p>
-        </nav>
-        <nav>
-            <p class="n">4</p> <p class="n">5</p> <p class="n">6</p> <p class="o">-</p>
-        </nav>
-        <nav>
-            <p class="n">1</p> <p class="n">2</p> <p class="n">3</p> <p class="o">+</p>
-        </nav>
-        <nav>
-            <p class="n">+/-</p> <p class="n">0</p> <p class="n">,</p> <p class="igual">=</p>
-        </nav>
-    </main>
+    <div class="calculadora">
+    <div id="display" class="display">0</div>
+
+    <div class="botoes">
+        <button class="operador">%</button>
+        <button class="operador">CE</button>
+        <button class="operador" onclick="limpar()">C</button>
+        <button class="operador" onclick="apagar()">⌫</button>
+
+        <button class="operador">¹/x</button>
+        <button class="operador">x²</button>
+        <button class="operador">²√x</button>
+        <button class="operador" onclick="adicionar('/')">÷</button>
+
+        <button onclick="adicionar('7')">7</button>
+        <button onclick="adicionar('8')">8</button>
+        <button onclick="adicionar('9')">9</button>
+        <button class="operador" onclick="adicionar('*')">×</button>
+
+        <button onclick="adicionar('4')">4</button>
+        <button onclick="adicionar('5')">5</button>
+        <button onclick="adicionar('6')">6</button>
+        <button class="operador" onclick="adicionar('-')">−</button>
+
+        <button onclick="adicionar('1')" >1</button>
+        <button onclick="adicionar('2')">2</button>
+        <button onclick="adicionar('3')">3</button>
+        <button class="operador" onclick="adicionar('+')">+</button>
+
+        <button>+/-</button>
+        <button onclick="adicionar('0')">0</button>
+        <button onclick="adicionar('.')">.</button>
+        <button class="igual" onclick="calcular()">=</button>
+    </div>
+</div>
 </body>
 </html>
