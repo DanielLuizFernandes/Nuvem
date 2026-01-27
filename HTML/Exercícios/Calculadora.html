@@ -77,13 +77,13 @@
 
     <div class="botoes">
         <button class="operador">%</button>
-        <button class="operador">CE</button>
+        <button class="operador" onclick="limpar()">CE</button>
         <button class="operador" onclick="limpar()">C</button>
         <button class="operador" onclick="apagar()">⌫</button>
 
         <button class="operador">¹/x</button>
-        <button class="operador">x²</button>
-        <button class="operador">²√x</button>
+        <button class="operador" onclick="adicionar('**')">x²</button>
+        <button class="operador" onclick="radiciacao()">²√x</button>
         <button class="operador" onclick="adicionar('/')">÷</button>
 
         <button onclick="adicionar('7')">7</button>
@@ -101,11 +101,46 @@
         <button onclick="adicionar('3')">3</button>
         <button class="operador" onclick="adicionar('+')">+</button>
 
-        <button>+/-</button>
+        <button onclick="mudarsinal()">+/-</button>
         <button onclick="adicionar('0')">0</button>
         <button onclick="adicionar('.')">.</button>
         <button class="igual" onclick="calcular()">=</button>
     </div>
 </div>
+<script>
+    let display = document.getElementById("display")
+    
+    function adicionar(valor){
+        if (display.innerText === "0") {
+            display.innerText = valor;
+        } else {
+            display.innerText += valor;
+        }
+    }
+
+    function mudarsinal(){
+        display.innerText = Number(display.innerText) * -1
+    }
+
+    function radiciacao(){
+        display.innerText = Math.sqrt(display.innerText)
+    }
+
+    function apagar(){
+        display.innerText = display.innerText.slice(0, -1) || "0";
+    }
+
+    function limpar(){
+        display.innerText = 0
+    }
+
+    function calcular() {
+        try {
+            display.innerText = eval(display.innerText);
+        } catch {
+            display.innerText = "Erro";
+        }
+    }
+</script>
 </body>
 </html>
