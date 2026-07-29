@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+h1 {
+    padding: 0px 0px 0px 10px;
+}
+p {
+    text-align: justify;
+}
+nav {
+    padding: 0px 0px 0px 60px;
+}
+div > nav > p {
+    display: none;
+}
+div:hover > nav > p {
+    display: block;
+}

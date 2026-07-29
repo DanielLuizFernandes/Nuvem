@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <link rel="shortcut icon" href="imagens/HTML5_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Código base</h1>
+            <nav>
+                <p>Dentro do seu editor...</p>
+                <ol>
+                    <li>Crie um novo arquivo <em>.html</em></li>
+                    <li>Clique no campo de texto</li>
+                    <li>Digite '!' e tecle <em>Enter</em></li>
+                </ol>
+                <p>Isso irá gerar o <strong>código base</strong> do seu site. Lembre-se de mudar a lang="" para a linguagem de seu usuário.</p>
+                <p>Use o seu explorador de arquivos para abrir o site em um navegador.</p>
+            </nav>
+    
+        <h1>Nome da Página</h1>
+            <nav>
+                <p>Entre a tag &lt;title&gt; coloque o <strong>nome</strong> desejado que será mostrado acima do site.</p>
+                <p>Após uma alteração recarregue a página ou tecle <em>F5</em> para ela aparecer</p>
+            </nav>
+
+        <h1>Hierarquia de Títulos</h1>
+            <nav>
+                <p>Para colocar <strong>títulos</strong> em sites é necessario saber que eles seguem uma <strong>hierarquia</strong> sendo o &lt;h1&gt; o mais importante e o &lt;h6&gt; o menos importante.</p>
+            </nav>
+
+        <h1>Parágrafos</h1>
+            <nav>
+                <p>A maior parte do conteúdo do site são <strong>parágrafos</strong> como esse, para colocalos usamos a tag &lt;p&gt;.</p>
+            </nav>
+
+        <h1>Pulos de Linha</h1>
+            <nav>
+                <p>No meio de parágrafos podemos <strong>pular linhas</strong> <br>utilizando a tag &lt;br&gt;</p>
+            </nav>
+
+        <h1>Símbolos</h1>
+            <nav>
+                <p><strong>Símbolos</strong> especiais precisam de códigos especiais para serem colocados, segue uma tabela:</p>
+                &amp;reg; &reg; <br>
+                &amp;copy; &copy; <br>
+                &amp;trade; &trade; <br>
+                &amp;euro; &euro; <br>
+                &amp;pound; &pound; <br>
+                &amp;yen; &yen; <br>
+                &amp;cent; &cent; <br>
+                &amp;darr; &darr; <br>
+                &amp;uarr; &uarr; <br>
+                &amp;larr; &larr; <br>
+                &amp;rarr; &rarr; <br>
+                &amp;spades; &spades; <br>
+                &amp;clubs; &clubs; <br>
+                &amp;hearts; &hearts; <br>
+                &amp;diams; &diams; <br>
+                &amp;lt; &lt; <br>
+                &amp;gt; &gt; <br>
+                &amp;amp; &amp; <br>
+                &amp;apos; &apos; <br>
+                &amp;quot; &quot; <br>
+                &amp;nbsp; &nbsp; <br>
+                &amp;Delta; &Delta;
+            </nav>
+            
+        <h1>Emojis</h1>
+            <nav>
+                <p>Para colocar <strong>emojis</strong> use o código &#x mais o código do emoji, para descobrir o código acesse a: <a href="https://emojipedia.org/" target="_blank">Emojipedia</a>. Ache o emoji, vá as informações technicas e copie o código depois do 'U+' e adicione ';' no final. &#x1F60E;</p>
+            </nav>
+
+        <h1>Imagens</h1>
+            <nav>
+                <p>Para colocar <strong>imagens</strong> use a tag &lt;img&gt;, no campo src='' coloque o endereço da <strong>imagem</strong> e no campo alt='' um nome de fácil identificação.</p>
+                <br>
+                <img src="imagens/HTML5_logo.png" alt="logo_html5">
+                <h2>Imagens que se adaptam</h2>
+                    <p>Dependo do tamanho da tela do usuário a imagem deve se adaptar para uma melhor experiência, para isso use a tag &lt;picture&gt;, dentro dela use a tag &lt;img&gt; e escolha a menor imagem, depois na linha de cima adicione 'source:media:type' então escolha a partir de que tamanho a outra imagem será exibida, qual imagem será exibida e o tipo da imagem</p>
+                    <img width="500px" src="imagens/imagem adaptada.png" alt="imagem_adaptada">
+            </nav>
+        
+        <h1>Favicon</h1>
+            <nav>
+                <p>Para colocar <strong>favicons</strong> na parte 'head' do seu site coloque 'link:favicon', no campo 'href=' coloque o endereço de imagem.</p>
+            </nav>
+
+        <h1>Textos Formatados</h1>
+            <nav>
+                <p>Para colocar alguns textos especiais use as tags abaixo:</p>
+                Negrito &lt;strong&gt; <strong>Negrito</strong> <br>
+                Itálico &lt;em&gt; <em>Itálico</em> <br>
+                Texto Marcado &lt;mark&gt; <mark>Texto Marcado</mark> <br>
+                Texto Pequeno &lt;small&gt; <small>Texto Pequeno</small> <br>
+                Texto Deletado &lt;del&gt; <del>Texto Deletado</del> <br>
+                Texto Inserido &lt;ins&gt; <ins>Texto Inserido</ins> <br>
+                Texto Sobrescrito &lt;sup&gt; H<sup>2+</sup> <br>
+                Texto Subscrito &lt;sub&gt; H<sub>2</sub>O <br>
+                Endereços &lt;address&gt; <address>Rua Agustinho Lucca, 162</address>
+                Códigos &lt;code&gt; <code>script</code> <br>
+                Citações &lt;q&gt; <q>A sociedade está afundando cada vez mais</q> <br>
+                Abreviações &lt;abbr&gt; <abbr title="HyperText Markup Language">HTML</abbr> <br>
+                Texto invertido &lt;bdo&gt; <bdo dir="rtl">Mensagem Invertida</bdo>
+            </nav>
+        
+        <h1>Listas Ordenadas</h1>
+            <nav>
+                <p>Para colocar <strong>listas ordenadas</strong> use &lt;ol&gt; e para os itens da lista use &lt;li&gt;, elas apareceram assim:</p>
+                <ol>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ol>
+            </nav>      
+            
+        <h1>Listas Não Ordenadas</h1>
+            <nav>
+                <p>Para colocar <strong>listas não ordenadas</strong> use &lt;ul&gt; e para os itens &lt;li&gt;, elas apareceram assim:</p>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+                <p>Para colocarmos <strong>listas</strong> de definições use &lt;dl&gt;, para títulos &lt;dt&gt; e para itens &lt;dd&gt;. Elas apareceram assim:</p>
+                <dl>
+                    <dt>A</dt>
+                        <dd>A Ã Â Á À a ã â á à</dd>
+                    <dt>B</dt>
+                        <dd>Bb</dd>
+                    <dt>C</dt>
+                        <dd>Cc</dd>
+                </dl>
+            </nav>
+
+        <h1>Links</h1>
+            <nav>
+                <p>Para colocar <strong>links</strong> use &lt;a&gt;, no campo href="" cole o <strong>link</strong> de onde quer acessar, e entre os &lt;a&gt;&lt;/a&gt; escreva uma mensagem ou imagem que o usuário clicará.</p>
+                <p>Quando o <strong>link</strong> for para outro site é bom que informar ao mecanismo de pesquisa que aquilo está além do nosso site, para isso usamos dentro das &lt;&gt; rel="external" e para que ele abra o <strong>link</strong> em uma nova guia use target="_blank"</p>
+                <a href="https://www.youtube.com/@Dan_Luyzi" rel="external" target="_blank">Meu Canal</a>
+                <h2>Páginas</h2>
+                    <nav>
+                        <p>Um site pode ter diferentes páginas. Criamos 2 arquivos .html e usamos a tag &lt;a&gt; para transitar entre elas</p>
+                    </nav>
+            </nav>
+
+        <h1>Áudio</h1>
+            <nav>
+                <p>Para colocar áudios usamos &lt;audio&gt;, no campo src="" cole o link do <strong>áudio</strong>. Também temos configurações adicionais como: controls que permite dar play, pausar e alterar a velocidade do <strong>áudio</strong>; loop que quando o <strong>áudio</strong> acaba ele toca de novo</p>
+                <audio src="midia/somwhatsapp.mp3" controls></audio>
+            </nav>
+
+        <h1>Vídeo</h1>
+            <nav>
+                <p>Para colocar <strong>vídeos</strong> usamos &lt;video&gt;, no campo src="" cole o link do <strong>vídeo</strong>. Também podemos configurar o tamanho do player com width=""; poster para definir uma "thumb" para o <strong>vídeo</strong>, além do loop e controls</p>
+                <video width="500px" src="midia/CasaNaChuva.mp4" controls></video>
+            </nav>
+        
+        <h1>CSS</h1>
+            <nav>
+                <p><strong>CSS</strong> é uma linguagem de marcação igual a linguagem HTML, porém ela é referente ao estilo e as partes visuais do site. Ela te permite alterar diversos atributos de um tag.</p>
+                <p>Existem 3 tipos:</p>
+                <ol>
+                    <li>
+                        <h2>CSS Inline</h2>
+                        <p>Dentro dos parênteses angulares &lt;&gt; de uma tag coloque: style=""</p>
+                    </li>
+                    <li>
+                        <h2>CSS Interno</h2>
+                        <p>Na parte 'head' do seu site coloque &lt;style&gt;, e dentro dela o nome da tag que você que alterar e entre chaves os atributos</p>
+                    </li>
+                    <li>
+                        <h2>CSS Externo</h2>
+                        <p>Na parte 'head' do do site coloque 'link:css' e crie o arquivo .css, depois adicione '@charset "UTF-8"' nele você poderá alterar todo o estilo do seu site e linka-lo a outras páginas do seu site para que todas fiquem com o mesmo padrão de estilo.</p>
+                    </li>
+                </ol>
+                <p>Elas seguem um hierarquia em que a <strong>Inline</strong> é a mais importante seguido da <strong>Interna</strong> e depois a <strong>Externa</strong></p>
+
+                <h2>Cores</h2>
+                <nav>
+                    <p style="color: grey;">Podemos alterar a <strong>cor</strong> de diversas coisas no nosso site como a de textos usando 'color:'</p>
+                    <p style="background-color: black; color: white;">Podemos alterar a <strong>cor</strong> do fundo de diferentes coisas usando 'background-color:'</p>
+                    <p style="background-image: linear-gradient(to right, red, orange, yellow, green, #00c3ff, blue, purple);">Podemos trocar o fundo para gradientes de <strong>cor</strong> usando 'background-image: linear-gradient()' indicando a direção do gradiente e 2 ou mais <strong>cores</strong> separadas por vígula.</p>
+                </nav>
+
+                <h2>Fontes</h2>
+                <nav>
+                    <h3>Locais</h3>
+                    <p>Para usar <strong>fontes</strong> locais em sites use 'font-family:' seguido da <strong>fonte</strong>.</p>
+                    <h3>Baixadas</h3>
+                    <p>Nem sempre as <strong>fontes</strong> pré-instaladas no nosso computador serão boas o bastante. Então podemos baixar <strong>fontes</strong> de outro lugar e colocar em nosso site.</p>
+                    <p>Para coloca-las vamos na parte 'style' do código e colocamos '@font-face' e teclamos <em>Enter</em>. Em 'font-family:""' de um nome para a <strong>fonte</strong>. em 'url()' coloque o endereço e em 'format()' o tipo de <strong>fonte</strong></p>
+                    <p>Existem 2 tipos: opentype (otf), truetype (ttf)</p>
+                </nav>
+
+                <h2>Alinhamentos</h2>
+                <nav>
+                    <p>Para <strong>alinhar</strong> textos use 'text-align:', e um dos alinhamentos: left, right, center ou justify.</p>
+                </nav>
+
+                <h2>ID</h2>
+                <nav>
+                    <p><strong>Id’s</strong> são usados para alterar uma tag específica em meio a outras tags do mesmo tipo</p> 
+
+                    <p>Ex: &lt;h1 id="principal"&gt;</p>
+
+                    <p>Dentro da tag &lt;style&gt; para especificar um <strong>id</strong> use '#', Ex: h1#principal{}</p>
+                    
+                    <p>“ATENÇÃO! não podemos usar o mesmo <strong>id</strong> em tags diferentes sendo elas do mesmo tipo ou não”</p>
+                </nav>
+
+                <h2>Class</h2>
+                <nav>
+                    <p><strong>Classes</strong> são usadas para alterar várias tags do mesmo tipo</p>
+                    <p>Ex: Tenho 4 parágrafos e quero que 2 fiquem azuis então uso &lt;p class=”destaque”&gt;, e no campo &lt;style&gt; use:</p>
+                    p.destaque{
+                    	<nav>background-color:black</nav>
+                    }                    
+                </nav>
+
+                <h2>Pseudo-Classe</h2>
+                <nav>
+                    <p><strong>Pseudo-Classes</strong> estão sempre relacionadas a uma classe ou a um tag (não uma tag específica, mas todas as tags que forem iguais)</p>
+                    <p>Podemos alterar uma classe inteira ou todas as tags que forem iguais dependendo de seu estado como por exemplo o:</p>
+
+                    <div>
+                        <h3>Hover</h3>
+                        <nav> 
+                            <p><strong>Hover</strong> significa que o mouse está em cima da tag, na parte de style mandamos o texto ficar escondido 'display: none;' até que coloquemos o mouse em cima dele 'display: block;'.</p>
+                        </nav>
+                    </div>
+                </nav>
+
+                <h2>Box</h2>
+                <nav>
+                    <p>Caixas são áreas invisíveis em volta de todos os elementos visuais de um site. Existem 2 tipos: box-level e inline-level</p>
+                    <img src="imagens/TiposDeBox.png" alt="box-levelEinline-level">
+                    
+                    <p>Elas tem duas características Height é a altura e Width é a largura.</p>
+                    <img src="imagens/Box.png" alt="AltuELarg" style="width: 500px;">
+
+                    <p>Envolta delas existem 4 divisões:</p>
+
+                    <dl>
+                        <dt style="color: #FFC90E; padding: 10px;">Padding</dt>
+                            <dd>Área entre o conteúdo da caixa e a borda. Pode ter seu tamanho alterado. Para a shorthand coloque apenas Padding e configure os tamanhos seguindo o ponteiro do relógio: 1° em cima depois direita, baixo e esquerda</dd>
+
+                        <dt style="color: #3F48CC; padding: 10px;">Border</dt>
+                            <dd>Área que engloba o Padding. Pode ter 3 estados alterados: Tamanho 'border-width: ;', formato 'border-style: ;' e cor 'border-color: ;'. Para o shorthand use 'border:' e coloque o tamanho, formato e a cor</dd>
+
+                            <dd>Para fazer uma borda curva use border-radius</dd>
+
+                        <dt style="color: #22B14C; padding: 10px;">Outline</dt>
+                            <dd>Área que engloba o Border. Pode ter 3 estados alterados: Tamanho 'outline-width: ;', formato 'outline-style: ;' e cor 'outline-color: ;'. Para o shorthand use 'outline:' e coloque o tamanho, formato e a cor</dd>
+                            
+                        <dt style="color: #ED1C24; padding: 10px;">Margin</dt>
+                            <dd>É a última camada de uma caixa. Ela engloba todo o resto. Pode ter seu tamanho alterado. Para a shorthand coloque apenas Margin e configure os tamanhos seguindo o ponteiro do relógio: 1° em cima depois direita, baixo e esquerda. Para centralizala use 'margin: auto;'</dd>
+
+                        <img src="imagens/Box1.png" alt="" style="width: 500px;">
+                    </dl>
+                </nav>
+
+                <h2>Grouping tags</h2>
+                <nav>
+                    <p>Para organizar melhor o conteúdo do nosso site podemos usar as <strong>Grouping tags</strong>:</p>
+
+                    <h3>Header</h3>
+                    <nav>
+                        <p>Em português <strong>cabeçalho</strong>, é onde botamos o titulo principal do site e todos os links.</p>
+
+                        <h4>Nav</h4>
+                        <nav>
+                            <p>Utilizado para organizar o <strong>cabeçalho</strong></p>
+                        </nav>
+                    </nav>
+
+                    <h3>Main</h3>
+                    <nav>
+                        <p>O site em si, todo o conteúdo fica aqui e pode ser subidividido por outras tags.</p>
+
+                        <h4>Section</h4>
+                        <nav>
+                            <p>Em português <strong>sessão</strong>, serve para separar os assuntos apresentados.</p>
+
+                            <h5>Article</h5>
+                            <nav>
+                                <p>Em português <strong>Artigo</strong>, se refere ao tema de sua <strong>sessão</strong></p>
+
+                                <h6>Aside</h6>
+                                <nav>
+                                    <p>Subdivisão do <strong>Artigo</strong></p>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </nav>
+
+                    <h3>Footer</h3>
+                    <nav>
+                        <p>Em português rodapé, onde ficam as informações de quem fez o site, leis de copyright e outras coisas.</p>
+                    </nav>
+                </nav>
+
+                <h2>Fundos Personalizados</h2>
+                <nav>
+                    <p>Para mudar o fundo de um site para uma imagem de nossa escolha usamos 'background-image: url('');' e colocamos o url da imagem entre as aspas, podendo ser uma imagem local ou da web.</p>
+
+                    <p>Se a imagem for muito pequena ela irá se repetir para cobrir toda a extensão da tela, podemos mandar ela não se repetir usando: 'background-repeat: no-repeat;'</p>
+
+                    <p>Podemos escolher o tamanho do fundo usando 'background-size:'</p>
+
+                    <p>Para escolhermos a posição da imagem usamos: 'background-position:' seguido de center, right, left, top e bottom e para colocarmos nas diagonais combinamos right ou left com top ou bottom</p>
+
+                    <p>Caso a página crie uma barra de rolagem mas queremos que a imagem fique parada use o 'background-attachment: fixed'</p>
+                    
+                    <p>Shorthand: color > image > position > repeat > attachment; o size não pode ser utilizado na shorthad devido a um bug da linguagem. Pois então coloque separado</p>
+
+                    <p>Se colocarmos uma caixa dentro da outra e dermos o valor da 'position:' da caixa de fora(MAIOR) como 'relative' e da caixa de dentro(MENOR) como 'absolute' podemos usar 'left' e 'top' para movimentar a caixa menor dentro da caixa maior</p>
+                </nav>
+            </nav>
+    </main>
+</body>
+</html>
